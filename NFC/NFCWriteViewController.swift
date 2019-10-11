@@ -8,11 +8,16 @@
 
 import UIKit
 import CoreNFC
+import Combine
 
 class NFCWriteViewController: UIViewController {
+    @Published var inputText: String = ""
+    
     let textField = UITextField()
     let button = createButton(title: "Write to tag")
     var session: NFCNDEFReaderSession?
+    
+    var cancelable: AnyCancellable?
     
     var message: NFCNDEFMessage? {
         guard let text = textField.text else { return nil }
@@ -37,10 +42,7 @@ class NFCWriteViewController: UIViewController {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.heightAnchor.constraint(equalToConstant: 32).isActive = true
         
-        
         button.addTarget(self, action: #selector(btnWriteClicked), for: .touchUpInside)
-        button.isEnabled = false
-        button.alpha = 0.6
         
         let stackView = UIStackView(arrangedSubviews: [textField, button])
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -49,16 +51,18 @@ class NFCWriteViewController: UIViewController {
         stackView.spacing = 20
         
         view.addSubview(stackView)
-        stackView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
         
+        cancelable = $inputText.map { $0.count > 0 }.sink { enabled in
+            self.button.isEnabled = enabled
+            self.button.alpha = enabled ? 1 : 0.6
+        }
     }
     
     @objc func editingChanged(sender: UITextField) {
-        button.isEnabled = (sender.text ?? "").count > 0
-        button.alpha = button.isEnabled ? 1 : 0.6
+        inputText = sender.text ?? ""
     }
     
     @objc func btnWriteClicked() {
