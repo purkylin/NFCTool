@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0D175F03234F01FF00D33646 /* NFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D175F02234F01FF00D33646 /* NFCView.swift */; };
 		0D175F05234F045300D33646 /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D175F04234F045300D33646 /* NFCViewController.swift */; };
+		0DB61F912350404F000E8CB4 /* ScanOtherResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB61F902350404F000E8CB4 /* ScanOtherResultView.swift */; };
 		0DC941A1234F1909005C65BB /* ScanResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC941A0234F1909005C65BB /* ScanResultView.swift */; };
 		0DC941A3234F3462005C65BB /* NFCWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC941A2234F3462005C65BB /* NFCWriteViewController.swift */; };
-		0DC941A523500B69005C65BB /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC941A423500B69005C65BB /* util.swift */; };
+		0DC941A523500B69005C65BB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC941A423500B69005C65BB /* Util.swift */; };
 		0DFCB37A234DB06E0085DD9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCB379234DB06E0085DD9E /* AppDelegate.swift */; };
 		0DFCB37C234DB06E0085DD9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCB37B234DB06E0085DD9E /* SceneDelegate.swift */; };
 		0DFCB37E234DB06E0085DD9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCB37D234DB06E0085DD9E /* ContentView.swift */; };
@@ -23,9 +24,10 @@
 /* Begin PBXFileReference section */
 		0D175F02234F01FF00D33646 /* NFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCView.swift; sourceTree = "<group>"; };
 		0D175F04234F045300D33646 /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
+		0DB61F902350404F000E8CB4 /* ScanOtherResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOtherResultView.swift; sourceTree = "<group>"; };
 		0DC941A0234F1909005C65BB /* ScanResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultView.swift; sourceTree = "<group>"; };
 		0DC941A2234F3462005C65BB /* NFCWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriteViewController.swift; sourceTree = "<group>"; };
-		0DC941A423500B69005C65BB /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		0DC941A423500B69005C65BB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		0DFCB376234DB06E0085DD9E /* NFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFCB379234DB06E0085DD9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DFCB37B234DB06E0085DD9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,8 +74,9 @@
 				0DFCB37B234DB06E0085DD9E /* SceneDelegate.swift */,
 				0D175F02234F01FF00D33646 /* NFCView.swift */,
 				0DC941A0234F1909005C65BB /* ScanResultView.swift */,
+				0DB61F902350404F000E8CB4 /* ScanOtherResultView.swift */,
 				0D175F04234F045300D33646 /* NFCViewController.swift */,
-				0DC941A423500B69005C65BB /* util.swift */,
+				0DC941A423500B69005C65BB /* Util.swift */,
 				0DC941A2234F3462005C65BB /* NFCWriteViewController.swift */,
 				0DFCB37D234DB06E0085DD9E /* ContentView.swift */,
 				0DFCB37F234DB06F0085DD9E /* Assets.xcassets */,
@@ -163,10 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB61F912350404F000E8CB4 /* ScanOtherResultView.swift in Sources */,
 				0DFCB37A234DB06E0085DD9E /* AppDelegate.swift in Sources */,
 				0DFCB37C234DB06E0085DD9E /* SceneDelegate.swift in Sources */,
 				0D175F03234F01FF00D33646 /* NFCView.swift in Sources */,
-				0DC941A523500B69005C65BB /* util.swift in Sources */,
+				0DC941A523500B69005C65BB /* Util.swift in Sources */,
 				0DFCB37E234DB06E0085DD9E /* ContentView.swift in Sources */,
 				0DC941A3234F3462005C65BB /* NFCWriteViewController.swift in Sources */,
 				0DC941A1234F1909005C65BB /* ScanResultView.swift in Sources */,
