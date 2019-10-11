@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D175F03234F01FF00D33646 /* NFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D175F02234F01FF00D33646 /* NFCView.swift */; };
+		0D175F05234F045300D33646 /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D175F04234F045300D33646 /* NFCViewController.swift */; };
+		0DC941A1234F1909005C65BB /* ScanResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC941A0234F1909005C65BB /* ScanResultView.swift */; };
+		0DC941A3234F3462005C65BB /* NFCWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC941A2234F3462005C65BB /* NFCWriteViewController.swift */; };
+		0DC941A523500B69005C65BB /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC941A423500B69005C65BB /* util.swift */; };
 		0DFCB37A234DB06E0085DD9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCB379234DB06E0085DD9E /* AppDelegate.swift */; };
 		0DFCB37C234DB06E0085DD9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCB37B234DB06E0085DD9E /* SceneDelegate.swift */; };
 		0DFCB37E234DB06E0085DD9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCB37D234DB06E0085DD9E /* ContentView.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D175F02234F01FF00D33646 /* NFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCView.swift; sourceTree = "<group>"; };
+		0D175F04234F045300D33646 /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
+		0DC941A0234F1909005C65BB /* ScanResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultView.swift; sourceTree = "<group>"; };
+		0DC941A2234F3462005C65BB /* NFCWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriteViewController.swift; sourceTree = "<group>"; };
+		0DC941A423500B69005C65BB /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		0DFCB376234DB06E0085DD9E /* NFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFCB379234DB06E0085DD9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DFCB37B234DB06E0085DD9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,7 @@
 		0DFCB382234DB06F0085DD9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0DFCB385234DB06F0085DD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DFCB387234DB06F0085DD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DFCB38D234DB0AF0085DD9E /* NFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFC.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +67,14 @@
 		0DFCB378234DB06E0085DD9E /* NFC */ = {
 			isa = PBXGroup;
 			children = (
+				0DFCB38D234DB0AF0085DD9E /* NFC.entitlements */,
 				0DFCB379234DB06E0085DD9E /* AppDelegate.swift */,
 				0DFCB37B234DB06E0085DD9E /* SceneDelegate.swift */,
+				0D175F02234F01FF00D33646 /* NFCView.swift */,
+				0DC941A0234F1909005C65BB /* ScanResultView.swift */,
+				0D175F04234F045300D33646 /* NFCViewController.swift */,
+				0DC941A423500B69005C65BB /* util.swift */,
+				0DC941A2234F3462005C65BB /* NFCWriteViewController.swift */,
 				0DFCB37D234DB06E0085DD9E /* ContentView.swift */,
 				0DFCB37F234DB06F0085DD9E /* Assets.xcassets */,
 				0DFCB384234DB06F0085DD9E /* LaunchScreen.storyboard */,
@@ -148,7 +165,12 @@
 			files = (
 				0DFCB37A234DB06E0085DD9E /* AppDelegate.swift in Sources */,
 				0DFCB37C234DB06E0085DD9E /* SceneDelegate.swift in Sources */,
+				0D175F03234F01FF00D33646 /* NFCView.swift in Sources */,
+				0DC941A523500B69005C65BB /* util.swift in Sources */,
 				0DFCB37E234DB06E0085DD9E /* ContentView.swift in Sources */,
+				0DC941A3234F3462005C65BB /* NFCWriteViewController.swift in Sources */,
+				0DC941A1234F1909005C65BB /* ScanResultView.swift in Sources */,
+				0D175F05234F045300D33646 /* NFCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NFC/NFC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NFC/Preview Content\"";
-				DEVELOPMENT_TEAM = QJSM3KYT6N;
+				DEVELOPMENT_TEAM = 5699EJAJ2E;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,9 +327,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NFC/NFC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NFC/Preview Content\"";
-				DEVELOPMENT_TEAM = QJSM3KYT6N;
+				DEVELOPMENT_TEAM = 5699EJAJ2E;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
